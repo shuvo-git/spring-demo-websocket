@@ -7,7 +7,6 @@ import org.springframework.web.util.HtmlUtils;
 
 @Controller
 public class GreetingsController {
-
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
     public Greeting greet(HelloMessage message){
